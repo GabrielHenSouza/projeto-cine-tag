@@ -1,3 +1,55 @@
+# CineTag
+
+CineTag é uma pequena aplicação React para listar filmes e marcar favoritos. O projeto foi construído com Create React App e contém componentes reutilizáveis, roteamento e um contexto simples para gerenciar favoritos.
+
+Principais pontos
+
+- Listagem de filmes a partir de um JSON local (`src/json/db.json`).
+- Sistema de favoritos usando Context API (`src/Contextos/Favoritos.js`).
+- Páginas: Início, Player e Favoritos.
+
+Como rodar localmente
+
+Requisitos: Node 16+ e npm ou yarn.
+
+```bash
+# instalar dependências
+npm install
+
+# rodar em desenvolvimento
+npm start
+
+# build de produção
+npm run build
+```
+
+Testes
+
+O projeto usa os utilitários criados pelo Create React App. Para executar os testes:
+
+```bash
+npm test -- --watchAll=false
+```
+
+Deploy / GitHub Pages
+
+Você pode publicar a pasta `build/` em GitHub Pages. Uma abordagem simples é usar o pacote `gh-pages` para gerar e publicar a build automaticamente. Se preferir, também é possível publicar manualmente selecionando a branch `gh-pages` nas configurações do repositório no GitHub.
+
+CI (GitHub Actions)
+
+Incluí um workflow básico de CI em `.github/workflows/ci.yml` que instala dependências, roda os testes e executa o build.
+
+Licença
+
+Este repositório inclui uma licença MIT no arquivo `LICENSE`.
+
+Contribuições
+
+Pull requests são bem-vindos. Abra uma issue se quiser discutir mudanças maiores.
+
+---
+
+Projeto enviado para: https://github.com/GabrielHenSouza/projeto-cine-tag
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
